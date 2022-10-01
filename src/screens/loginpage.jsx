@@ -61,7 +61,7 @@ const handelSignIn = async(e)=>{
                 window.location.href = "/dashboard";
             }
             else{
-                window.location.href = "/";
+                window.location.href = "/dashboard";
             }
             checkData()
             });
