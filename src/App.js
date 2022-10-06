@@ -10,7 +10,7 @@ import { EditProductPage } from './screens/EditProxucts'
 import { FoodProductDetailse } from './screens/foods/FoodProductDetailse';
 
 // food Product
-import { FoodProductData } from './screens/foods/FoodProductsPage';
+import { FoodProductsPage } from './screens/foods/FoodProductsPage';
 import { AddFoodProductData } from './screens/foods/AddFoodProductsPage';
 import { EditFoodProducts } from './screens/foods/EditFoodProducts';
 
@@ -35,15 +35,15 @@ const App = () => {
 
 
         {/* Food Products */}
-        <Route exact path='/foodproducts' component={FoodProductData}/>
-        <Route exact path='/foodproducts/:id' component={FoodProductDetailse} />
-        <Route exact path='/foodproducts/edit/:id' component={EditFoodProducts} />
+        <Route exact path='/foodproducts' element={<FoodProductsPage />}/>
+        <Route exact path='/foodproducts/:id' element={<FoodProductDetailse />} />
+        <Route exact path='/foodproducts/edit/:id' element={<EditFoodProducts />} />
 
 
-        <Route exact path='/addFoodproducts' component={AddFoodProductData}/>
-        <Route exact path='/account-setting' component={AccountSettings}/>
-        <Route exact path='/inventory/:id' component={Inventory}/>
-        <Route exact path='/stripePayment/:id' component={StripePaymentData}/>
+        <Route exact path='/addFoodproducts' element={<AddFoodProductData />}/>
+        <Route exact path='/account-setting' element={<AccountSettings />}/>
+        <Route exact path='/inventory/:id' element={<Inventory />}/>
+        <Route exact path='/stripePayment/:id' element={<StripePaymentData />}/>
 
       </Routes>
   )

@@ -9,7 +9,7 @@ const ProductCard = ({ product }) => {
     return (
         <>
             <Card className='shadow-lg m-2 p-3 rounded' style={{ width: '18rem' }}>
-                <Card.Img style={{width: "50%"}} src={`http://localhost:8001/uploads/${product.image}`} alt='data'/>
+                <Card.Img style={{width: "50%"}} src={`https://fathomless-oasis-35119.herokuapp.com/uploads/${product.image}`} alt='data'/>
                 <Card.Body>
                     <Card.Title>Title: {product.title}</Card.Title>
                     <Card.Title>Price: ${product.price}</Card.Title>

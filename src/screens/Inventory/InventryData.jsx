@@ -46,7 +46,7 @@ export const InventoryData = () => {
 			order_id: data.id,
 			handler: async (response) => {
 				try {
-					const verifyUrl = `http://localhost:8001/api/products/verify/${id}`;
+					const verifyUrl = `https://fathomless-oasis-35119.herokuapp.com/api/products/verify/${id}`;
 					const { data } = await axios.post(verifyUrl, response);
 					console.log(data);
           if(data.status === 1){
@@ -74,7 +74,7 @@ export const InventoryData = () => {
 
   const handlePayment = async () => {
 		try {
-			const orderUrl = "http://localhost:8001/api/products/payment";
+			const orderUrl = "https://fathomless-oasis-35119.herokuapp.com/api/products/payment";
 			const { data } = await axios.post(orderUrl, { amount: price });
 			initPayment(data.message);
 		} catch (error) { 
@@ -101,7 +101,7 @@ export const InventoryData = () => {
       <Row>
         <Col md={8} lg={12} sm={8}>
             <Card className='shadow-lg m-3 p-2 rounded'>
-                    <Card.Img src={`http://localhost:8001/uploads/${productImage}`} style={{width:"40%" }} />
+                    <Card.Img src={`https://fathomless-oasis-35119.herokuapp.com/uploads/${productImage}`} style={{width:"40%" }} />
                     <Card.Body>
                         <Card.Title>Title: {title}</Card.Title>
                         <Card.Title className="text-success">Price: ${price}</Card.Title>

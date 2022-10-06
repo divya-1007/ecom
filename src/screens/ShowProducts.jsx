@@ -8,7 +8,7 @@ const ShowProducts = () => {
 
     useEffect(() => {
         const getProductsData = async () => {
-            const { data } = await axios.get('/api/products/allProducts')
+            const { data } = await axios.get('api/products/allProducts')
             console.log(data ,"products")
             setProducts(data)
         }
@@ -34,7 +34,7 @@ const ShowProducts = () => {
                         {
                             products.map(product => {
                         return( <tr>
-                            <td><img style={{width: "50%"}} src={`http://localhost:8001/uploads/${product.image}`} alt='data'/></td>
+                            <td><img style={{width: "50%"}} src={`https://fathomless-oasis-35119.herokuapp.com/uploads/${product.image}`} alt='data'/></td>
                             <td>{product.title}</td>
                             <td><p style={{display: "-webkit-box", maxWidth:" 200px","-webkitLineClamp": "2", "-webkitBoxOrient": "vertical", overflow: "hidden",}}>{product.description}</p></td>
                             <td>{product.price}</td>

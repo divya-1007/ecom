@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Container, Row, Col, Card ,Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
-export const FoodProducts = () => {
+export const FoodProduct = () => {
 
   const [products, setProducts] = useState([])
 
@@ -34,7 +34,7 @@ export const FoodProducts = () => {
                 {
                     products.map(productData => {
                 return( <tr>
-                    <td><img style={{width: "50%"}} src={`http://localhost:8001/uploads/${productData.image}`} alt='data'/></td>
+                    <td><img style={{width: "50%"}} src={`https://fathomless-oasis-35119.herokuapp.com/uploads/${productData.image}`} alt='data'/></td>
                     <td>{productData.title}</td>
                     <td><p style={{display: "-webkit-box", maxWidth:" 200px","-webkitLineClamp": "2", "-webkitBoxOrient":
                      "vertical", overflow: "hidden",}}>{productData.description}</p></td>

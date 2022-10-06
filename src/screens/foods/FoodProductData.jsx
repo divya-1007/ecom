@@ -102,7 +102,7 @@ export const FoodProductDatas = () => {
         <Row>
             <Col md={8} lg={8} sm={8}>
                 <Card className='shadow-lg m-3 p-2 rounded'>
-                        <Card.Img src={`http://localhost:8001/uploads/${productImage}`} fluid />
+                        <Card.Img src={`https://fathomless-oasis-35119.herokuapp.com/uploads/${productImage}`} fluid />
                         <Card.Body>
                             <Card.Title>Title: {title}</Card.Title>
                             <Card.Title className="text-success">Price: ${price}</Card.Title>

@@ -28,8 +28,8 @@ export const Customer = () => {
             <div className="customer">
                 <div className="info">
                 <h4>{product.id}</h4>
-                    {/* <img src="https://assets.codepen.io/3853433/internal/avatars/users/default.png?format=auto&version=1617122449&width=40&height=40"
-                        alt=""/> */}
+                    <img src="https://assets.codepen.io/3853433/internal/avatars/users/default.png?format=auto&version=1617122449&width=40&height=40"
+                        alt=""/>
                     <div>
                         <h4>
                             {product.entity}</h4>

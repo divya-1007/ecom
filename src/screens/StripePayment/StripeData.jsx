@@ -211,7 +211,7 @@ export const StripeData = () => {
           <Col md={8} lg={12} sm={8}>
             <Card className="shadow-lg m-3 p-2 rounded">
               <Card.Img
-                src={`http://localhost:8001/uploads/${productImage}`}
+                src={`https://fathomless-oasis-35119.herokuapp.com/uploads/${productImage}`}
                 style={{ width: "40%" }}
               />
               <Card.Body>
