@@ -17,6 +17,7 @@ export const FoodProduct = () => {
     }, [])
 
   return (
+    <>
     <div className="card-body">
     <div className="table-responsive">
         <table width="100%">
@@ -41,7 +42,7 @@ export const FoodProduct = () => {
                     <td>{productData.price}</td>
                     {productData.published ? (<td><span className="status purple"></span>active</td>) :
                     (<td><span className="status purple"></span>Inactive</td>)}
-                    <td className='m-2'><Link to={`foodproducts/${productData.id}`}>
+                    <td className='m-2'><Link to={`/foodproducts/${productData.id}`}>
                     <Button style={{background:'#ff0066',border:'none' }}>Details</Button>
                     </Link></td>
                 </tr>)
@@ -51,5 +52,6 @@ export const FoodProduct = () => {
         </table>
     </div>
 </div>
+</>
   )
 }

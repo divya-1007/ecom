@@ -115,7 +115,7 @@ export const ProductData = () => {
                            <br />
 
                     
-                            <Link to={`/product/edit/${id}`}>
+                            <Link to={`/dashboard/product/edit/${id}`}>
                                 <Button>Edit</Button>
                             </Link>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import '../../assert/dashboard.css';
+// import ShowProducts from './ShowProducts';
 import SideBar from '../sideBar';
 import { Customer } from '../Customer';
-import { UserAccountSetting } from './UserAccountSetting';
-
-export const AccountSettings = () => {
+import { UserSettings } from './UserAccountSetting';
+export const AccountSetting = () => {
     let welcome;  
     let date = new Date();  
     let hour = date.getHours();  
@@ -143,15 +143,14 @@ function customWarn(msg, duration) {
                     <i className="indicator"></i>
                 </div>
             </div>
-            {/* <Cards /> */}
             <div className="recent-grid">
                 <div className="projects">
                     <div className="card">
                         <div className="card-header">
-                            <h3 className="heading">Account Settings</h3>
+                            <h3 className="heading">Product Details</h3>
                             {/* <button>See all <span className="fas fa-arrow-right"></span></button> */}
                         </div>
-                        <UserAccountSetting />
+                        <UserSettings />
                     </div>
                 </div>
                 <Customer />

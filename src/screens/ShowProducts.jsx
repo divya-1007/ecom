@@ -40,7 +40,7 @@ const ShowProducts = () => {
                             <td>{product.price}</td>
                             {product.published ? (<td><span class="status purple"></span>active</td>) :
                             (<td><span class="status purple"></span>Inactive</td>)}
-                            <td className='m-2'><Link to={`product/${product.id}`}>
+                            <td className='m-2'><Link to={`/dashboard/product/${product.id}`}>
                             <Button style={{background:'#ff0066',border:'none' }}>Detail</Button>
                             </Link></td>
                         </tr>)

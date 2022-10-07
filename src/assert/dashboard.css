@@ -1335,10 +1335,10 @@ body.light footer p{
     width: 5px !important;
 }
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 10px;
-}
+} */
 
 body.light ::-webkit-scrollbar {
     background-color: var(--dark-BG);
