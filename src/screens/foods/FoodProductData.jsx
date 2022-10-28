@@ -56,8 +56,8 @@ export const FoodProductDatas = () => {
               .then(willDelete => {
                 if (willDelete) {
                   swal("Deleted!", "SuccessFull", "success");
-                  history.push("/foodproducts")
-				//   window.location.href = "/dashboard";
+                //   history.push("/foodproducts")
+				  window.location.href = "/foodproducts";
                 }
               });
             }else{
