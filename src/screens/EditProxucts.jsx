@@ -159,7 +159,7 @@ function customWarn(msg, duration) {
         </main>
      <div className="footer">
     <div className="word">
-     <p>Made with <span id="hrt"><i className="far fa-heart"></i></span> | PULSE 2022</p>
+     {/* <p>Made with <span id="hrt"><i className="far fa-heart"></i></span> | PULSE 2022</p> */}
     </div>
     </div>
     </div>
