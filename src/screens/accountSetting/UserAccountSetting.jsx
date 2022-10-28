@@ -23,7 +23,7 @@ export const UserSettings = () => {
                     <td><p style={{display: "-webkit-box", maxWidth:" 200px","-webkitLineClamp": "2", "-webkitBoxOrient": "vertical", 
                     overflow: "hidden",}}>jshxbxhxb</p></td>
                     <td>1009</td>
-                    (<td><span class="status purple"></span>Inactive</td>)
+                    <td><span class="status purple"></span>Inactive</td>
                     <td className='m-2'><Link to={`/dashboard/product`}>
                     <Button style={{background:'#ff0066',border:'none' }}>Detail</Button>
                     </Link></td>
